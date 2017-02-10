@@ -27,7 +27,7 @@ data AirtableOptions = AirtableOptions {
   , appId :: String  
   -- | api version (http://api.airtable.com/v../...)
   , apiVersion :: Int
-  }
+  } deriving (Show)
 
 -- | Airtable options defaulting to API version 0. Please change the 
 --   'apiKey' and 'appId' fields.
